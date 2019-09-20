@@ -1,0 +1,50 @@
+.header {
+  /* background: url("../../assets/man-1209957_1920_copy3.jpg") no-repeat; */
+  background-size: 100%;
+  height: 1080px;
+  margin-top: -800px;
+  z-index: 1;
+}
+
+.header__container {
+  width: 1024px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.header__container__buttons {
+  position: fixed;
+}
+
+.header__container__info {
+  margin-top: 280px;
+  width: 1024px;
+  height: 700px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  border: 1px solid black;
+  z-index: 1;
+}
+.header__container__info h2 {
+  margin: 10px;
+}
+.header__container__info p {
+  margin: 0px;
+  font-size: 1.5rem;
+}
+.header__container__info a {
+  margin: 0px;
+  font-size: 1.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000 !important;
+}
+.header__container__info a:hover {
+  text-decoration: none;
+}
+
+.info__description {
+  font-family: "Quicksand", sans-serif;
+}
