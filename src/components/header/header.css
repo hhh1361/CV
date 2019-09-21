@@ -1,9 +1,8 @@
 .header {
   /* background: url("../../assets/man-1209957_1920_copy3.jpg") no-repeat; */
   background-size: 100%;
-  height: 1080px;
-  margin-top: -800px;
-  z-index: 1;
+  height: 700px;
+  margin-top: -1px;
 }
 
 .header__container {
@@ -18,14 +17,12 @@
 }
 
 .header__container__info {
-  margin-top: 280px;
+  margin-top: 150px;
   width: 1024px;
   height: 700px;
   font-family: "Quicksand", sans-serif;
   text-align: center;
   font-size: 2rem;
-  border: 1px solid black;
-  z-index: 1;
 }
 .header__container__info h2 {
   margin: 10px;

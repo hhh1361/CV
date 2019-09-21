@@ -3,7 +3,6 @@ import "./buttons.css";
 
 class Buttons extends Component {
   render() {
-    console.log(this.props.profile);
     return (
       <Fragment>
         {Object.keys(this.props.profile).map(function(element) {

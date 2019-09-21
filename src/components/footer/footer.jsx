@@ -6,7 +6,10 @@ class Footer extends Component {
     const profile = this.props.profile;
     return (
       <Fragment>
-        <div>all rights reserved</div>
+        <div>
+          created by {profile.name}. <br />
+          all rights reserved
+        </div>
       </Fragment>
     );
   }

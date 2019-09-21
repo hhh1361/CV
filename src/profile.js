@@ -1,7 +1,7 @@
 export default {
   name: "Nikita Turlyko",
   "about me":
-    "At the current job I began to deal with a basics of programming such as VBA and tried to study them. And i was vary exited. I feel pleasure when the process i created works well. It inspires me to further development. I do not think that i have chosen the wrong profession. but i understand that i want to realize myself in a new area.",
+    "At the current job I began to deal with a basics of programming such as VBA and tried to study it. And i was very excited, I feel pleasure when the process i created works well. It inspires me to further development. Now I can describe myself as a junior front-end developer. I have diverse set of skills such as design, HTML, CSS, JavaScript, module development. I want to succeed in a new area, so I spend all my spare time to gain new knowledge",
   skills: [
     {
       sphere: "HTML5",
@@ -26,7 +26,11 @@ export default {
       description: "I study the work of the react library."
     },
     {
-      "Team work": "React",
+      sphere: "ESLint/Prettier",
+      description: "My goal is to make code more consistent and avoid bugs"
+    },
+    {
+      sphere: "Team work",
       description: "I can work well both independently and in a team."
     }
   ],
