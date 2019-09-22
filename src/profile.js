@@ -26,31 +26,31 @@ export default {
       description: "I study the work of the react library."
     },
     {
-      sphere: "ESLint/Prettier",
+      sphere: "ESLint",
       description: "My goal is to make code more consistent and avoid bugs"
     },
     {
-      sphere: "Team work",
+      sphere: "Teamwork",
       description: "I can work well both independently and in a team."
     }
   ],
-  "code examples": "https://github.com/hhh1361?tab=repositories",
-  experience: [
-    {
-      project: "Piskel Clone",
-      link: "..."
-    },
-    {
-      project: "Piskel Clone",
-      link: "..."
-    }
-  ],
+
   education: [
     "Belarusian State University, School of Business and Management of Technology",
     "The Rolling Scopes School 2019"
   ],
   "english level":
-    "Upper-Intermediate. My english classes began whan i was six and continued for eleven years at school. Now i use english in my work. I communicate with SAP consultants from ATOS as a key user of SAP of my department",
+    "Upper-Intermediate. My english classes began whan i was six and continued for eleven years at school. Now i use english in my work. I communicate with SAP-consultants from ATOS as a SAP-key user of my department",
+  "my projects": [
+    {
+      project: "Piskel Clone",
+      link: "..."
+    },
+    {
+      project: "Culture Portal",
+      link: "..."
+    }
+  ],
   contacts: {
     phone: "+375291887374",
     email: "nikita.turlyko@gmail.com",

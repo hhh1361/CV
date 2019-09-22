@@ -1,18 +1,18 @@
 section {
-  width: 1024px;
-  margin: auto;
+  font-family: "Quicksand", sans-serif;
+  background: rgba(255, 255, 255, 0.688);
+}
+section h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 .section__about-me {
-  /* width: 1024px;
-  background: url("../../assets/back1.png");
-  background-size: 100%;
-  border-radius: 30px;
-  box-shadow: 0 0 60px 0px inset rgba(0, 101, 114, 0.329); */
   width: 100%;
   height: 500px;
   display: flex;
   flex-direction: row;
-  background: rgba(255, 255, 255, 0.788);
 }
 .section__about-me__photo {
   width: 400px;
@@ -26,29 +26,84 @@ section {
   width: 724px;
   margin: auto;
 }
-.section__about-me__information h2 {
-  text-align: center;
-  font-weight: bold;
-  font-family: "Quicksand", sans-serif;
-  font-size: 2.5rem;
-}
 .section__about-me__information h4 {
   font-size: 1.5rem;
   font-family: "Indie Flower", cursive;
 }
 
 .section__skills {
-  background: rgba(141, 245, 141, 0.418);
+  height: 600px;
 }
-.section__code-examples {
-  background: rgba(16, 44, 16, 0.5);
+.section__skills_background {
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  opacity: 0;
+  z-index: -1;
+}
+#backgroundCSS3 {
+  background: url("../../assets/section__skills/CSS3.png") no-repeat;
+}
+#backgroundHTML5 {
+  background: url("../../assets/section__skills/HTML5.png") no-repeat;
+}
+#backgroundJS {
+  background: url("../../assets/section__skills/JS.png") no-repeat;
+}
+#backgroundGit {
+  background: url("../../assets/section__skills/Git.png") no-repeat;
+}
+#backgroundESLint {
+  background: url("../../assets/section__skills/ESLint.png") no-repeat;
+}
+#backgroundTeamwork {
+  background: url("../../assets/section__skills/Teamwork.png") no-repeat;
+}
+#backgroundBEM {
+  background: url("../../assets/section__skills/BEM.png") no-repeat;
+}
+#backgroundReact {
+  background: url("../../assets/section__skills/React.png") no-repeat;
+}
+
+.section__skills__container {
+  width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template: "a b";
+}
+.skill {
+  padding: 0px;
+  margin: 0px;
+  height: auto;
+  background: none;
+  border: 1px solid red;
 }
 .section__education {
-  background: rgba(6, 43, 6, 0.404);
+}
+.section__education__container {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.logo {
+  border: 1px solid red;
+}
+.section__education__bsu-logo {
+  background: url("../../assets/section__education/bsu.png") no-repeat;
+  width: 500px;
+  height: 200px;
+  background-size: 100%;
+}
+.section__education__rs-logo {
+  background: url("../../assets/section__education/logo-rs.svg") no-repeat;
+  width: 300px;
+  height: 300px;
+  background-size: 100%;
+}
+.section__my-projects {
 }
 .section__english-level {
-  background: rgba(0, 128, 0, 0.384);
 }
 .section__contacts {
-  background: rgba(35, 36, 35, 0.329);
 }
