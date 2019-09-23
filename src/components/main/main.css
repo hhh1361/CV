@@ -1,12 +1,14 @@
 section {
   font-family: "Quicksand", sans-serif;
   background: rgba(255, 255, 255, 0.688);
+  margin: 30px 0;
 }
 section h2 {
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
   text-transform: uppercase;
+  margin: auto;
 }
 .section__about-me {
   width: 100%;
@@ -40,6 +42,7 @@ section h2 {
   height: 600px;
   opacity: 0;
   z-index: -1;
+  transition: all 0.5s ease;
 }
 #backgroundCSS3 {
   background: url("../../assets/section__skills/CSS3.png") no-repeat;
@@ -80,25 +83,29 @@ section h2 {
   border: 1px solid red;
 }
 .section__education {
+  height: 350px;
 }
 .section__education__container {
-  border: 1px solid red;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 45% 55%;
 }
 .logo {
-  border: 1px solid red;
+  margin: auto;
 }
-.section__education__bsu-logo {
-  background: url("../../assets/section__education/bsu.png") no-repeat;
+.logo:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.bsu-logo {
+  background: url("../../assets/section__education/bsu1.png") no-repeat;
   width: 500px;
   height: 200px;
   background-size: 100%;
 }
-.section__education__rs-logo {
+.rs-logo {
   background: url("../../assets/section__education/logo-rs.svg") no-repeat;
   width: 300px;
-  height: 300px;
+  height: 270px;
   background-size: 100%;
 }
 .section__my-projects {

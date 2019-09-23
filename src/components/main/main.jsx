@@ -71,8 +71,12 @@ class Main extends Component {
         <section className="section__education">
           <h2>education</h2>
           <div className="section__education__container">
-            <div className="section__education__bsu-logo logo"></div>
-            <div className="section__education__rs-logo logo"></div>
+            <div className="section__education__bsu-logo">
+              <div className="bsu-logo logo"></div>
+            </div>
+            <div className="section__education__rs-logo">
+              <div className="rs-logo logo"></div>
+            </div>
           </div>
         </section>
         <section className="section__english-level">
