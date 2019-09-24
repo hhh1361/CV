@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import Clock from "react-clock";
 import Calendar from "react-calendar";
@@ -40,12 +41,21 @@ class Main extends Component {
 
     return (
       <div className="main">
+        <a href="#" name="section__about me">
+          <p />
+        </a>
         <section className="section__about-me">
-          <div className="section__about-me__photo" />
-          <div className="section__about-me__information">
-            <h2>About me</h2>
-            <h4>{profile["about me"]}</h4>
+          <div className="section__about-me__container">
+            <div className="section__about-me__photo" />
+            <div className="section__about-me__information">
+              <h2>About me</h2>
+              <h4>{profile["about me"]}</h4>
+            </div>
           </div>
+
+          <a href="" name="section__skills">
+            <p />
+          </a>
         </section>
         <section className="section__skills">
           <h2>skills</h2>
@@ -76,6 +86,9 @@ class Main extends Component {
               );
             })}
           </div>
+          <a href="" name="section__education">
+            <p />
+          </a>
         </section>
         <section className="section__education">
           <h2>education</h2>
@@ -93,27 +106,45 @@ class Main extends Component {
               <div className="english-text">{profile.education[2]}</div>
             </div>
           </div>
+          <a href="" name="section__my-projects">
+            <p />
+          </a>
         </section>
         <section className="section__my-projects">
           <h2>Projects</h2>
           <div className="section__my-projects__container">
-            <a
-              href="https://hhh1361.github.io/piskel-clone/"
-              className="section__my-projects__piskel"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p />
-            </a>
-            <a
-              href="https://bcj.netlify.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="section__my-projects__bcj"
-            >
-              <p />
-            </a>
+            <div className="project__piskel">
+              <h3>Piskel Clone</h3>
+              <p className="project__piskel_text">
+                {profile["my-projects"].piskel.text}
+              </p>
+              <a
+                href="https://hhh1361.github.io/piskel-clone/"
+                className="section__my-projects__piskel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p />
+              </a>
+            </div>
+            <div className="project__bcj">
+              <h3>BCJ</h3>
+              <p className="project__bcj_text">
+                {profile["my-projects"].bcj.text}
+              </p>
+              <a
+                href="https://bcj.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="section__my-projects__bcj"
+              >
+                <p />
+              </a>
+            </div>
           </div>
+          <a href="" name="section__contacts">
+            <p />
+          </a>
         </section>
         <section className="section__contacts">
           <h2>contacts</h2>
@@ -123,13 +154,17 @@ class Main extends Component {
             </div>
             <ul className="section__contacts__list">
               <li className="ul section__contacts__list-item phone">
-                <a href="">
+                <a href="callto:+375291887374">
                   <div className="phone-logo list-item-logo" />
                   <p className="phone-text list-item-text">+375(29)1887374</p>
                 </a>
               </li>
               <li className="ul section__contacts__list-item email">
-                <a href="https://gmail.com">
+                <a
+                  href="https://gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="email-logo list-item-logo" />
                   <p className="email-text list-item-text">
                     nikita.turlyko@gmail.com
@@ -137,7 +172,11 @@ class Main extends Component {
                 </a>
               </li>
               <li className="ul section__contacts__list-item telegram">
-                <a href="https://t.me/nikitaturlyko">
+                <a
+                  href="https://t.me/nikitaturlyko"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="telegram-logo list-item-logo" />
                   <p className="telegram-text list-item-text">
                     t.me/nikitaturlyko
@@ -145,7 +184,11 @@ class Main extends Component {
                 </a>
               </li>
               <li className="ul section__contacts__list-item vk">
-                <a href="https://vk.com/nikita.turlyko">
+                <a
+                  href="https://vk.com/nikita.turlyko"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="vk-logo list-item-logo" />
                   <p className="vk-text list-item-text">
                     vk.com/nikita.turlyko
@@ -153,7 +196,11 @@ class Main extends Component {
                 </a>
               </li>
               <li className="ul section__contacts__list-item instagram">
-                <a href="https://www.instagram.com/nikitaturlyko/">
+                <a
+                  href="https://www.instagram.com/nikitaturlyko/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="instagram-logo list-item-logo" />
                   <p className="instagram-text list-item-text">
                     instagram.com/nikitaturlyko
@@ -161,7 +208,11 @@ class Main extends Component {
                 </a>
               </li>
               <li className="ul section__contacts__list-item github">
-                <a href="https://github.com/hhh1361">
+                <a
+                  href="https://github.com/hhh1361"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="github-logo list-item-logo" />
                   <p className="github-text list-item-text">
                     github.com/hhh1361
@@ -172,6 +223,7 @@ class Main extends Component {
             <div className="calendar">
               <Calendar
                 onChange={this.onChange}
+                locale="en-GB"
                 value={this.state.date}
                 className="calendar"
               />

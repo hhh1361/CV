@@ -11,7 +11,17 @@ section h2 {
   padding: 50px 0 30px 0;
   margin: 0;
 }
+h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: auto;
+}
 .section__about-me {
+  width: 100%;
+  height: 500px;
+}
+.section__about-me__container {
   width: 100%;
   height: 500px;
   display: flex;
@@ -80,12 +90,18 @@ section h2 {
   display: grid;
   grid-template: "a b";
 }
+
 .skill {
   padding: 0px;
-  margin: 0px;
+  margin: 15px 0;
   height: auto;
   background: none;
-  border: 1px solid red;
+}
+.skill h4,
+.skill p {
+  text-align: center;
+  margin: 0px;
+  font-size: 1.3rem;
 }
 .section__education {
   height: 450px;
@@ -114,9 +130,11 @@ section h2 {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   justify-content: center;
-  width: 300px;
+  width: 450px;
   height: 0px;
   opacity: 0;
+  font-size: 30px;
+  overflow: hidden;
 }
 .section__education__bsu-logo:hover .bsu-text,
 .section__education__rs-logo:hover .rs-text,
@@ -127,13 +145,13 @@ section h2 {
   transition: all 0.5s ease-in-out;
 }
 .section__education__bsu-logo:hover .bsu-text {
-  margin-top: -150px;
-}
-.section__education__rs-logo:hover .rs-text {
   margin-top: -200px;
 }
+.section__education__rs-logo:hover .rs-text {
+  margin-top: -250px;
+}
 .section__education__english-logo:hover .english-text {
-  margin-top: -220px;
+  margin-top: -320px;
 }
 .bsu-logo {
   background: url("../../assets/section__education/logo__bsu.png") no-repeat;
@@ -162,6 +180,14 @@ section h2 {
   display: grid;
   grid-template: "a b";
 }
+.project__piskel,
+.project__bcj {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  font-size: 20px;
+}
 .section__my-projects__piskel,
 .section__my-projects__bcj {
   background-size: 100%;
@@ -180,7 +206,6 @@ section h2 {
 .section__contacts {
   height: 450px;
 }
-
 .section__contacts__container {
   margin: auto;
   display: grid;

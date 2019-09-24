@@ -8,9 +8,13 @@ class Buttons extends Component {
         {Object.keys(this.props.profile).map(function(element) {
           if (element !== "name") {
             return (
-              <button key={element} className="header__container__button">
+              <a
+                key={element}
+                className="header__container__button"
+                href={`#section__${element}`}
+              >
                 {element}
-              </button>
+              </a>
             );
           }
           return null;

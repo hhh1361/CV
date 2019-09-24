@@ -40,20 +40,22 @@ export default {
   ],
 
   education: [
-    "Belarusian State University, School of Business and Management of Technology",
-    "The Rolling Scopes School 2019",
-    "Upper-Intermediate. My english classes began whan i was six and continued for eleven years at school. Now i use english in my work. I communicate with SAP-consultants from ATOS as a SAP-key user of my department"
+    "Graduated specialist in the sphere of logistic. Finished Belarusian State University, School of Business and Management of Technology  in 2014",
+    "Successfully finished The Rolling Scopes School Javascript course in 2019",
+    "My english level is Intermediate. English classes began whan i was six and continued for eleven years at school. Now i use english in my work. I communicate with SAP-consultants from ATOS as a SAP key-user of my department"
   ],
-  "my projects": [
-    {
-      project: "Piskel Clone",
-      link: "..."
+  "my-projects": {
+    piskel: {
+      text:
+        "The application is a graphic editor. You can draw, create GIF images, export them on your device and ext. This app was written on pure js. ",
+      link: "https://hhh1361.github.io/piskel-clone/"
     },
-    {
-      project: "Culture Portal",
-      link: "..."
+    bcj: {
+      text:
+        "In this case our team create a culture portal with information about famous belorussian film directors. We used such technologies as React, Netlify, Material-ui, Gatsbyjs",
+      link: "https://bcj.netlify.com/"
     }
-  ],
+  },
   contacts: {
     phone: "+375291887374",
     email: "nikita.turlyko@gmail.com",
