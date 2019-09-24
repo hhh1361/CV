@@ -1,20 +1,24 @@
 section {
   font-family: "Quicksand", sans-serif;
   background: rgba(255, 255, 255, 0.688);
-  margin: 30px 0;
+  margin: 50px 0;
 }
 section h2 {
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
   text-transform: uppercase;
-  margin: auto;
+  padding: 50px 0 30px 0;
+  margin: 0;
 }
 .section__about-me {
   width: 100%;
   height: 500px;
   display: flex;
   flex-direction: row;
+}
+.section__about-me h2 {
+  padding: 0px;
 }
 .section__about-me__photo {
   width: 400px;
@@ -43,6 +47,7 @@ section h2 {
   opacity: 0;
   z-index: -1;
   transition: all 0.5s ease;
+  margin-top: -50px;
 }
 #backgroundCSS3 {
   background: url("../../assets/section__skills/CSS3.png") no-repeat;
@@ -83,34 +88,214 @@ section h2 {
   border: 1px solid red;
 }
 .section__education {
-  height: 350px;
+  height: 450px;
 }
 .section__education__container {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 1fr 1fr 1fr;
+  perspective: 1000px;
+  transition: all 0.5s;
 }
 .logo {
   margin: auto;
 }
-.logo:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease;
+.section__education__bsu-logo:hover .logo,
+.section__education__rs-logo:hover .logo,
+.section__education__english-logo:hover .logo {
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.english-text,
+.rs-text,
+.bsu-text {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+  height: 0px;
+  opacity: 0;
+}
+.section__education__bsu-logo:hover .bsu-text,
+.section__education__rs-logo:hover .rs-text,
+.section__education__english-logo:hover .english-text {
+  height: 300px;
+  opacity: 1;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+}
+.section__education__bsu-logo:hover .bsu-text {
+  margin-top: -150px;
+}
+.section__education__rs-logo:hover .rs-text {
+  margin-top: -200px;
+}
+.section__education__english-logo:hover .english-text {
+  margin-top: -220px;
 }
 .bsu-logo {
-  background: url("../../assets/section__education/bsu1.png") no-repeat;
+  background: url("../../assets/section__education/logo__bsu.png") no-repeat;
   width: 500px;
   height: 200px;
   background-size: 100%;
 }
 .rs-logo {
-  background: url("../../assets/section__education/logo-rs.svg") no-repeat;
+  background: url("../../assets/section__education/logo__rs.svg") no-repeat;
   width: 300px;
   height: 270px;
   background-size: 100%;
 }
+.english-logo {
+  background: url("../../assets/section__education/logo__english.png") no-repeat;
+  width: 250px;
+  height: 250px;
+  background-size: 100%;
+}
 .section__my-projects {
+  height: 600px;
 }
-.section__english-level {
+.section__my-projects__container {
+  width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template: "a b";
 }
+.section__my-projects__piskel,
+.section__my-projects__bcj {
+  background-size: 100%;
+  width: 384px;
+  height: 180px;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.section__my-projects__piskel {
+  animation-name: piskel;
+}
+.section__my-projects__bcj {
+  animation-name: bcj;
+}
+
 .section__contacts {
+  height: 450px;
+}
+
+.section__contacts__container {
+  margin: auto;
+  display: grid;
+  grid-template: "a b c";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section__contacts__list {
+  width: 350px;
+  margin: auto;
+}
+
+.calendar {
+  opacity: 0.7;
+  margin: -20px auto auto auto;
+}
+.clock {
+  opacity: 0.5;
+  margin: 0px auto;
+}
+li {
+  list-style-type: none;
+  margin: 15px 0px;
+}
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.section__contacts__list-item a {
+  display: flex;
+  text-decoration: none;
+  color: #000 !important;
+}
+.list-item-logo {
+  width: 30px;
+  height: 30px;
+}
+.list-item-text {
+  height: 30px;
+  line-height: 30px;
+  margin: 0 20px;
+  font-size: 20px;
+}
+.phone-logo {
+  background: url("../../assets/section__contacts/phone.png") no-repeat;
+  background-size: 100%;
+}
+.email-logo {
+  background: url("../../assets/section__contacts/email.png") no-repeat;
+  background-size: 100%;
+}
+.telegram-logo {
+  background: url("../../assets/section__contacts/telegram.png") no-repeat;
+  background-size: 100%;
+}
+.instagram-logo {
+  background: url("../../assets/section__contacts/instagram.png") no-repeat;
+  background-size: 100%;
+}
+.github-logo {
+  background: url("../../assets/section__contacts/github.png") no-repeat;
+  background-size: 100%;
+}
+.vk-logo {
+  background: url("../../assets/section__contacts/vk.png") no-repeat;
+  background-size: 100%;
+}
+
+@keyframes piskel {
+  from {
+    background-image: url("../../assets/section__projects/piskel/1.png");
+  }
+
+  20% {
+    background-image: url("../../assets/section__projects/piskel/2.png");
+  }
+
+  40% {
+    background-image: url("../../assets/section__projects/piskel/3.png");
+  }
+
+  60% {
+    background-image: url("../../assets/section__projects/piskel/4.png");
+  }
+
+  80% {
+    background-image: url("../../assets/section__projects/piskel/5.png");
+  }
+
+  to {
+    background-image: url("../../assets/section__projects/piskel/1.png");
+  }
+}
+
+@keyframes bcj {
+  from {
+    background-image: url("../../assets/section__projects/bcj/1.png");
+  }
+
+  20% {
+    background-image: url("../../assets/section__projects/bcj/2.png");
+  }
+
+  40% {
+    background-image: url("../../assets/section__projects/bcj/3.png");
+  }
+
+  60% {
+    background-image: url("../../assets/section__projects/bcj/4.png");
+  }
+
+  80% {
+    background-image: url("../../assets/section__projects/bcj/5.png");
+  }
+
+  to {
+    background-image: url("../../assets/section__projects/bcj/1.png");
+  }
 }

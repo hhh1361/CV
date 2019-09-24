@@ -6,6 +6,8 @@
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
+    "react-calendar": "^2.19.2",
+    "react-clock": "^2.4.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
   },

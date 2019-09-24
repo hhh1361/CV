@@ -6,16 +6,15 @@ export default {
     {
       sphere: "HTML5",
       description:
-        "Studied html. I know how and when to apply the necessary tags and attributes on the page."
+        "I know how and when to apply the necessary tags and attributes on the page."
     },
     {
       sphere: "CSS3",
-      description: "Studied CSS. I can apply design methods in practice."
+      description: "I can apply design methods in practice."
     },
     {
       sphere: "JS",
-      description:
-        "Learned js programming language to create interactive website."
+      description: "I can create interactive website."
     },
     {
       sphere: "Git",
@@ -23,7 +22,8 @@ export default {
     },
     {
       sphere: "React",
-      description: "I study the work of the react library."
+      description:
+        "I study the work of the React library and already have a few completed projects on React"
     },
     {
       sphere: "ESLint",
@@ -31,16 +31,19 @@ export default {
     },
     {
       sphere: "Teamwork",
-      description: "I can work well both independently and in a team."
+      description: "I have experience of work both independently and in a team."
+    },
+    {
+      sphere: "BEM",
+      description: "I am trying to use BEM notation on everything i build"
     }
   ],
 
   education: [
     "Belarusian State University, School of Business and Management of Technology",
-    "The Rolling Scopes School 2019"
+    "The Rolling Scopes School 2019",
+    "Upper-Intermediate. My english classes began whan i was six and continued for eleven years at school. Now i use english in my work. I communicate with SAP-consultants from ATOS as a SAP-key user of my department"
   ],
-  "english level":
-    "Upper-Intermediate. My english classes began whan i was six and continued for eleven years at school. Now i use english in my work. I communicate with SAP-consultants from ATOS as a SAP-key user of my department",
   "my projects": [
     {
       project: "Piskel Clone",

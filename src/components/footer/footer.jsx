@@ -1,16 +1,17 @@
 import React, { Component, Fragment } from "react";
+
 import "./footer.css";
 
 class Footer extends Component {
   render() {
-    const profile = this.props.profile;
     return (
-      <Fragment>
-        <div>
-          created by {profile.name}. <br />
-          all rights reserved
+      <div className="footer">
+        <div className="footer__text">
+          <p>Created by</p>
+          <p>Nikita Turlyko.</p>
+          <p>All rights reserved.</p>
         </div>
-      </Fragment>
+      </div>
     );
   }
 }
