@@ -19,9 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      <div id="hero">
-        <div className="layer layer-01" depth="0.09"></div>
-        <div className="layer layer-02" depth="0.5"></div>
+      <div id="back">
+        <div className="layer layer-01" depth="0.1"></div>
+        <div className="layer layer-02" depth="0.01"></div>
         <div className="layer layer-03" depth="0.7"></div>
         <div className="layer layer-04" depth="0.8"></div>
         <div className="layer layer-05" depth="1"></div>
