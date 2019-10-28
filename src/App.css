@@ -21,3 +21,36 @@
     height: 1200px;
   }
 }
+@media (max-width: 768px) {
+  * {
+    color: red;
+  }
+  body,
+  head {
+    margin: auto;
+  }
+  #back {
+    width: 768px;
+    overflow: hidden;
+  }
+  .layer {
+    width: 768px;
+  }
+  .header__container__button {
+    padding: 16px auto;
+  }
+  .header__container {
+    width: 768px;
+  }
+  .header__container__buttons {
+    width: 768px;
+  }
+  .header__container__info {
+    height: 700px;
+    width: 768px;
+  }
+  .header {
+    height: 700px;
+    width: 768px;
+  }
+}
