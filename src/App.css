@@ -22,25 +22,20 @@
   }
 }
 @media (max-width: 768px) {
-  * {
-    color: red;
-  }
   body,
   head {
     margin: auto;
+    color: rgb(255, 255, 255);
   }
-  #back {
-    width: 768px;
-    overflow: hidden;
-  }
+
   .layer {
     width: 768px;
   }
-  .header__container__button {
-    padding: 16px auto;
+  .header__container__info {
+    margin-top: 300px;
   }
-  .header__container {
-    width: 768px;
+  .header__container__button {
+    padding: 16px 40px;
   }
   .header__container__buttons {
     width: 768px;
@@ -50,7 +45,68 @@
     width: 768px;
   }
   .header {
-    height: 700px;
+    width: 768px;
+    height: 1024px;
+  }
+  .layer {
+    background: none;
+  }
+  .App {
+    background: url("./assets/background-tablet.png") no-repeat;
+    background-size: cover;
+  }
+  .section__education {
+    height: 1080px;
+  }
+  .rs-logo {
+    margin-right: 33%;
+  }
+  .rs-text {
+    margin-top: 40px;
+  }
+  .section__education__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .section__my-projects__container {
+    width: 768px;
+  }
+  .project__piskel,
+  .project__bcj {
+    width: 384px;
+  }
+  .section__contacts__container {
+    display: flex;
+  }
+  .calendar {
+    display: none;
+  }
+  .footer {
+    background: none;
+  }
+  .header__container__info a {
+    color: rgb(255, 255, 255) !important;
+  }
+  .header__container {
+    width: 768px;
+  }
+  .section__about-me__information h4 {
+    font-size: 1.3rem;
+  }
+  .section__about-me__information {
+    width: 400px;
+  }
+  .section__about-me__photo {
+    width: 300px;
+    height: 300px;
+  }
+  .skill {
+    width: 354px;
+  }
+  .section__skills__container {
+    width: 768px;
+  }
+  .section__skills_background {
     width: 768px;
   }
 }
