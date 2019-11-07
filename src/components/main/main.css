@@ -433,4 +433,9 @@ ul {
   .section__about-me__information {
     width: 100%;
   }
+  .bsu-text,
+  .english-text,
+  .rs-text {
+    width: 100%;
+  }
 }
