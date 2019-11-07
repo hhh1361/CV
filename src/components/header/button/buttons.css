@@ -17,3 +17,12 @@
 .header__container__button:hover {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .header__container__button {
+    padding: 5px 0px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

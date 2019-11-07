@@ -45,3 +45,38 @@
 .info__description {
   font-family: "Quicksand", sans-serif;
 }
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 1024px;
+  }
+  .header__container {
+    width: 100%;
+  }
+  .header__container__info a {
+    color: rgb(255, 255, 255) !important;
+  }
+
+  .header__container__info {
+    margin-top: 140px;
+  }
+  .header__container__buttons {
+    position: inherit;
+  }
+  .layer {
+    display: none;
+  }
+  .header__container__button {
+    padding: auto;
+  }
+  .header__container__info {
+    margin-top: 300px;
+    height: 700px;
+    width: 100%;
+  }
+  .header__container__buttons {
+    position: initial;
+    width: 100%;
+  }
+}

@@ -4,3 +4,10 @@ section {
 body {
   margin: 0px;
 }
+@media (max-width: 768px) {
+  body,
+  head {
+    margin: auto;
+    color: rgb(255, 255, 255);
+  }
+}

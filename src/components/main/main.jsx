@@ -46,9 +46,10 @@ class Main extends Component {
         </a>
         <section className="section__about-me">
           <div className="section__about-me__container">
+            <h2 className="hidden">About me</h2>
             <div className="section__about-me__photo" />
             <div className="section__about-me__information">
-              <h2>About me</h2>
+              <h2 className="visible">About me</h2>
               <h4>{profile["about me"]}</h4>
             </div>
           </div>
